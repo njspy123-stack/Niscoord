@@ -1,0 +1,15 @@
+Upload this whole folder's contents to the root of your GitHub repo.
+
+Required top-level items:
+- public/
+- functions/
+- .gitignore
+- package.json
+- README.md
+- schema.sql
+- wrangler.toml
+
+Important:
+- Do not upload the outer "niscoord-upload" folder itself as a nested folder in the repo.
+- The repo root should directly contain public/ and functions/.
+- Cloudflare Pages should then see public as the output directory and functions as Pages Functions.

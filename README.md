@@ -59,7 +59,7 @@ Suggested commands:
 npx wrangler d1 create niscoord-db
 npx wrangler secret put RESEND_API_KEY
 npx wrangler secret put EMAIL_FROM
-npx wrangler pages dev
+npx wrangler pages dev public
 ```
 
 ## Deployment notes
@@ -72,6 +72,22 @@ This repo is prepared for Cloudflare Pages deployment, but the actual deploy sti
 - real email provider secrets if you want verification emails to go out
 
 With those in place, deploy with Wrangler or a Git-connected Pages project.
+
+Direct upload command:
+
+```powershell
+npx wrangler pages deploy public --project-name niscoord
+```
+
+Important:
+
+- Do not use `npx wrangler deploy` for this repo. That is the Workers deploy command, and this project is set up as a Pages project.
+- If you are using Cloudflare Pages with Git integration, do not set the deploy command to `npx wrangler deploy`.
+- For a simple first deployment in the Cloudflare dashboard, use:
+  - Framework preset: `None`
+  - Build command: leave blank
+  - Build output directory: `public`
+  - Root directory: repo root
 
 ## Next phases
 

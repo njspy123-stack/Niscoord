@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "wrangler pages dev",
-    "deploy": "wrangler pages deploy public"
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public --project-name niscoord",
+    "deploy:preview": "wrangler pages deploy public --project-name niscoord --branch preview"
   }
 }
