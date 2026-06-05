@@ -1,0 +1,9 @@
+{
+  "name": "niscoord",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy public"
+  }
+}
