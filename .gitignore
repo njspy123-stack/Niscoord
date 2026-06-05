@@ -1,0 +1,15 @@
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.env.*
+
+dist/
+coverage/
+
+work/
+outputs/
+
+*.log
+Thumbs.db
+.DS_Store
